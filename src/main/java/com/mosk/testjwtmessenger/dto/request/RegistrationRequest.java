@@ -1,4 +1,4 @@
-package com.mosk.testjwtmessenger.dto;
+package com.mosk.testjwtmessenger.dto.request;
 
 import lombok.Data;
 

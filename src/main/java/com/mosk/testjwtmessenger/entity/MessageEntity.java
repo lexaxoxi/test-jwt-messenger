@@ -1,14 +1,8 @@
 package com.mosk.testjwtmessenger.entity;
 
 
-
 import lombok.Data;
-//import lombok.Getter;
-//import lombok.NoArgsConstructor;
-//import lombok.Setter;
 import org.springframework.data.annotation.CreatedBy;
-//import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-
 
 import javax.persistence.*;
 
@@ -19,14 +13,15 @@ import javax.persistence.*;
 public class MessageEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_message;
+    private Long id_message;
 
+    @Column
     private String text_message;
 
 
     @CreatedBy
     @ManyToOne
-    @JoinColumn(name = "login")
-    private UserEntity login;
+    @JoinColumn(name = "user_id")
+    private UserEntity speaker;
 
 }

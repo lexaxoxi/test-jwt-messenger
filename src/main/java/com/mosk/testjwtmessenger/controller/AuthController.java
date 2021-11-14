@@ -1,9 +1,9 @@
 package com.mosk.testjwtmessenger.controller;
 
 import com.mosk.testjwtmessenger.config.jwt.JwtProvider;
-import com.mosk.testjwtmessenger.dto.AuthRequest;
-import com.mosk.testjwtmessenger.dto.AuthResponse;
-import com.mosk.testjwtmessenger.dto.RegistrationRequest;
+import com.mosk.testjwtmessenger.dto.request.AuthRequest;
+import com.mosk.testjwtmessenger.dto.response.AuthResponse;
+import com.mosk.testjwtmessenger.dto.request.RegistrationRequest;
 import com.mosk.testjwtmessenger.entity.UserEntity;
 import com.mosk.testjwtmessenger.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +20,7 @@ public class AuthController {
     @Autowired
     private JwtProvider jwtProvider;
 
+    //регистрация нового пользователя
     @PostMapping("/register")
     public String registerUser(@RequestBody @Valid RegistrationRequest registrationRequest) {
         UserEntity u = new UserEntity();
@@ -29,6 +30,7 @@ public class AuthController {
         return "welcome!";
     }
 
+    //авторизация пользователя и получение токена безопасности
     @PostMapping("/auth")
     public AuthResponse auth(@RequestBody AuthRequest request) {
         UserEntity userEntity = userService.findByLoginAndPassword(request.getLogin(), request.getPassword());

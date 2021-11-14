@@ -20,4 +20,6 @@ public class RoleEntity {
 
     @Column
     private String name;
+
+
 }
