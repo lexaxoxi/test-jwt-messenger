@@ -1,6 +1,6 @@
-package com.mosk.testjwtmessenger.config;
+package com.mosk.testjwtmessenger.base.building.config;
 
-import com.mosk.testjwtmessenger.entity.UserEntity;
+import com.mosk.testjwtmessenger.base.building.entity.UserEntity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

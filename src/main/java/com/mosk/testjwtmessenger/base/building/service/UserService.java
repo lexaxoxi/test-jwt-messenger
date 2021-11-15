@@ -1,9 +1,9 @@
-package com.mosk.testjwtmessenger.service;
+package com.mosk.testjwtmessenger.base.building.service;
 
-import com.mosk.testjwtmessenger.entity.RoleEntity;
-import com.mosk.testjwtmessenger.entity.UserEntity;
-import com.mosk.testjwtmessenger.repository.RoleEntityRepository;
-import com.mosk.testjwtmessenger.repository.UserEntityRepository;
+import com.mosk.testjwtmessenger.base.building.entity.RoleEntity;
+import com.mosk.testjwtmessenger.base.building.entity.UserEntity;
+import com.mosk.testjwtmessenger.base.building.repository.RoleEntityRepository;
+import com.mosk.testjwtmessenger.base.building.repository.UserEntityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

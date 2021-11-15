@@ -1,7 +1,7 @@
-package com.mosk.testjwtmessenger.config.jwt;
+package com.mosk.testjwtmessenger.base.building.config.jwt;
 
-import com.mosk.testjwtmessenger.config.CustomUserDetails;
-import com.mosk.testjwtmessenger.config.CustomUserDetailsService;
+import com.mosk.testjwtmessenger.base.building.config.CustomUserDetails;
+import com.mosk.testjwtmessenger.base.building.config.CustomUserDetailsService;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

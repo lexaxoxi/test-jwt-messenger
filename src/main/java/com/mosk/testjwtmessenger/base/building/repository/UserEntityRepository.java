@@ -1,6 +1,6 @@
-package com.mosk.testjwtmessenger.repository;
+package com.mosk.testjwtmessenger.base.building.repository;
 
-import com.mosk.testjwtmessenger.entity.UserEntity;
+import com.mosk.testjwtmessenger.base.building.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

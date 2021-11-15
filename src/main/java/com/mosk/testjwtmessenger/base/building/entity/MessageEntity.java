@@ -1,4 +1,4 @@
-package com.mosk.testjwtmessenger.entity;
+package com.mosk.testjwtmessenger.base.building.entity;
 
 
 import lombok.Data;

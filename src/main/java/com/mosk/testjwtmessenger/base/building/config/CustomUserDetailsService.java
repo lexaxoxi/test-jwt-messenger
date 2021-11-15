@@ -1,7 +1,7 @@
-package com.mosk.testjwtmessenger.config;
+package com.mosk.testjwtmessenger.base.building.config;
 
-import com.mosk.testjwtmessenger.entity.UserEntity;
-import com.mosk.testjwtmessenger.service.UserService;
+import com.mosk.testjwtmessenger.base.building.entity.UserEntity;
+import com.mosk.testjwtmessenger.base.building.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

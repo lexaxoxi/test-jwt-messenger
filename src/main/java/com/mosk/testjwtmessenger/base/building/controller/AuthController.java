@@ -1,11 +1,11 @@
-package com.mosk.testjwtmessenger.controller;
+package com.mosk.testjwtmessenger.base.building.controller;
 
-import com.mosk.testjwtmessenger.config.jwt.JwtProvider;
-import com.mosk.testjwtmessenger.dto.request.AuthRequest;
-import com.mosk.testjwtmessenger.dto.response.AuthResponse;
-import com.mosk.testjwtmessenger.dto.request.RegistrationRequest;
-import com.mosk.testjwtmessenger.entity.UserEntity;
-import com.mosk.testjwtmessenger.service.UserService;
+import com.mosk.testjwtmessenger.base.building.config.jwt.JwtProvider;
+import com.mosk.testjwtmessenger.base.building.dto.request.AuthRequest;
+import com.mosk.testjwtmessenger.base.building.dto.response.AuthResponse;
+import com.mosk.testjwtmessenger.base.building.dto.request.RegistrationRequest;
+import com.mosk.testjwtmessenger.base.building.entity.UserEntity;
+import com.mosk.testjwtmessenger.base.building.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

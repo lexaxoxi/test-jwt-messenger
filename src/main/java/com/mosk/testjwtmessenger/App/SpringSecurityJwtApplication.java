@@ -1,4 +1,4 @@
-package com.mosk.testjwtmessenger;
+package com.mosk.testjwtmessenger.App;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

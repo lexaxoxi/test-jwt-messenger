@@ -1,6 +1,6 @@
-package com.mosk.testjwtmessenger.config;
+package com.mosk.testjwtmessenger.base.building.config;
 
-import com.mosk.testjwtmessenger.config.jwt.JwtFilter;
+import com.mosk.testjwtmessenger.base.building.config.jwt.JwtFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

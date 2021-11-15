@@ -1,4 +1,4 @@
-package com.mosk.testjwtmessenger.entity;
+package com.mosk.testjwtmessenger.base.building.entity;
 
 import lombok.Data;
 
@@ -7,19 +7,26 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "role_table")
+@Table(name = "user_table")
 @Data
-public class RoleEntity {
+public class UserEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column
-    private String name;
+    private String login;
 
+    @Column
+    private String password;
 
+    @ManyToOne
+    @JoinColumn(name = "role_id")
+    private RoleEntity roleEntity;
 }

@@ -1,4 +1,4 @@
-package com.mosk.testjwtmessenger.config.jwt;
+package com.mosk.testjwtmessenger.base.building.config.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

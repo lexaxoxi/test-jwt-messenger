@@ -1,4 +1,4 @@
-package com.mosk.testjwtmessenger.dto.response;
+package com.mosk.testjwtmessenger.base.building.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
